@@ -1,13 +1,23 @@
 # Serasa Experian API Library
 
+![NPM Version](https://img.shields.io/npm/v/serasa-xapi.svg) ![License](https://img.shields.io/npm/l/serasa-xapi.svg)
+
 Uma biblioteca TypeScript para consumir as APIs do Serasa Experian, com foco inicial em score de crédito e dados para CNPJ e CPF.
 
 ## Instalação
-
+npm
 ```bash
-npm install serasa-experian-api-library
-# ou
-yarn add serasa-experian-api-library
+  npm install serasa-xapi
+```
+
+yarn
+```bash
+  yarn add serasa-xapi
+```
+
+pnpm
+```bash
+  pnpm add serasa-xapi
 ```
 
 ## Uso
@@ -17,7 +27,7 @@ yarn add serasa-experian-api-library
 Para usar a biblioteca, você precisará do seu `CLIENT_ID` e `CLIENT_SECRET` fornecidos pela Serasa Experian. É recomendado armazená-los em variáveis de ambiente (`.env`).
 
 ```typescript
-import SerasaExperianAPI from 'serasa-experian-api-library';
+import SerasaExperianAPI from 'serasa-xapi';
 
 // Carrega as variáveis de ambiente (se estiver usando dotenv)
 // require('dotenv').config();
@@ -37,7 +47,7 @@ const serasaApi = new SerasaExperianAPI({
 #### Consultar Score de Fraude para Pessoa Física (CPF)
 
 ```typescript
-import SerasaExperianAPI from 'serasa-experian-api-library';
+import SerasaExperianAPI from 'serasa-xapi';
 
 // ... (configuração da instância da API)
 
@@ -62,7 +72,7 @@ consultarScoreFraudePF();
 #### Consultar Score de Fraude para Pessoa Jurídica (CNPJ)
 
 ```typescript
-import SerasaExperianAPI from 'serasa-experian-api-library';
+import SerasaExperianAPI from 'serasa-xapi';
 
 // ... (configuração da instância da API)
 
@@ -87,7 +97,7 @@ consultarScoreFraudePJ();
 #### Consultar Dados Avulsos para Pessoa Física (CPF)
 
 ```typescript
-import SerasaExperianAPI from 'serasa-experian-api-library';
+import SerasaExperianAPI from 'serasa-xapi';
 
 // ... (configuração da instância da API)
 
@@ -112,7 +122,7 @@ consultarDadosAvulsosPF();
 #### Consultar Dados Avulsos para Pessoa Jurídica (CNPJ)
 
 ```typescript
-import SerasaExperianAPI from 'serasa-experian-api-library';
+import SerasaExperianAPI from 'serasa-xapi';
 
 // ... (configuração da instância da API)
 
